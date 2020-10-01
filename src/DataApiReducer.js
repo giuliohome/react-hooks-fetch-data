@@ -4,7 +4,8 @@ function dataFetchReducer (initData) { return (state, action) => {
         return {
           ...state,
           isLoading: true,
-          isError: false
+          isError: false,
+          data: initData,
         };
       case 'FETCH_SUCCESS':
         return {
